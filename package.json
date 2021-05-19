@@ -1,6 +1,6 @@
 {
   "name": "spdl-core",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Spotify track downloader module. Written in pure javascript.",
   "main": "lib/index.js",
   "dependencies": {
@@ -12,7 +12,6 @@
     "ytdl-core": "^4.8.0"
   },
   "scripts": {
-    "test": "node test/index",
     "publish": "git add . && git commit -m 'Update' && git push origin master"
   },
   "keywords": [
