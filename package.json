@@ -1,13 +1,12 @@
 {
   "name": "spdl-core",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Spotify track downloader module. Written in pure javascript.",
   "main": "lib/index.js",
   "dependencies": {
     "discord-ytdl-core": "^5.0.2",
     "node-fetch": "^2.6.1",
     "spotify-url-info": "^2.2.0",
-    "spotify-web-api-node": "^5.0.2",
     "youtube-sr": "^4.0.1",
     "ytdl-core": "^4.8.0"
   },
@@ -52,13 +51,6 @@
     "url": "https://github.com/SkyDonald/spdl-core/issues"
   },
   "homepage": "https://github.com/SkyDonald/spdl-core#readme",
-  "directories": {
-    "test": "test"
-  },
-  "engines": {
-    "node": ">=14"
-  },
-  "engineStrict": true,
   "devDependencies": {
     "@types/node": "^15.3.0"
   }

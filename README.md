@@ -2,21 +2,6 @@
 
 Spotify track downloader module. Written in pure javascript.
 
-> Requires node >=14
-
-# Credentials
-
-The module need a Spotify `clientId` and `clientSecret` to work, the module provide you one but if too much people use the module with this credentials, you will be rate limited and the module won't work.
-To avoid this, you should set your own credentials.
-To do that, go to [The Spotify developers dashboard](https://developer.spotify.com/dashboard/applications) and create an application.
-Copy your credentials and paste it with:
-```js
-spdl.setCredentials("Your app's clientId", "Your app's clientSecret");
-// or
-spdl.setClientId("Your app's clientId");
-spdl.setClientSecret("Your app's clientSecret");
-```
-
 # Support
 You can contact us for support on our [chat server](https://discord.gg/AUfTUJA)
 
@@ -39,21 +24,15 @@ spdl.getInfo('https://open.spotify.com/track/3fjmSxt0PskST13CSdBUFx?si=e420cd3a8
 ### async spdl(url, options?)
 
 Downloads the track from the given url. Returns a [readable stream](https://nodejs.org/api/stream.html#stream_class_stream_readable)
-Options are the options for ytdl-core
+Options are the options for discord-ytdl-core
 
 ### async spdl.getInfo(url)
 
 Gives the information of a track
 
-### spdl.validateURL(url)
+### spdl.validateURL(url, type?)
 
-Returns true if url is a spotify track link
-
-### spdl.setCredentials("Your app's clientId", "Your app's clientSecret")
-### spdl.setClientId("Your app's clientId")
-### spdl.setClientSecret("Your app's clientSecret")
-
-Sets the module credentials to yours
+Returns true if url is a spotify link
 
 ## Limitations
 
@@ -114,16 +93,6 @@ client.on('message', async (msg) => {
   }
 });
 ```
-
-# Give me your opinion 
-
-[![](https://gitrate.herokuapp.com/happy?ref=SkyDonald.spdl-core)](https://gitrate.herokuapp.com/happy/done?ref=SkyDonald.spdl-core)
-[![](https://gitrate.herokuapp.com/unhappy?ref=SkyDonald.spdl-core)](https://gitrate.herokuapp.com/unhappy/done?ref=SkyDonald.spdl-core)
-
-# Related Projects
-
-- [discord-spdl-core](https://www.npmjs.com/package/discord-spdl-core) - Simple spdl wrapper for discord bots with custom ffmpeg args support.
-- [spdl](https://www.npmjs.com/package/spdl) - A cli wrapper of this.
 
 # Note
 

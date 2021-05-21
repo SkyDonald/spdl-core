@@ -2,8 +2,6 @@
 
 Spotify track downloader module. Written in pure javascript.
 
-> Requires node >=14
-
 # Support
 You can contact us for support on our [chat server](https://discord.gg/AUfTUJA)
 
@@ -26,15 +24,15 @@ spdl.getInfo('https://open.spotify.com/track/3fjmSxt0PskST13CSdBUFx?si=e420cd3a8
 ### async spdl(url, options?)
 
 Downloads the track from the given url. Returns a [readable stream](https://nodejs.org/api/stream.html#stream_class_stream_readable)
-Options are the options for ytdl-core
+Options are the options for discord-ytdl-core
 
 ### async spdl.getInfo(url)
 
 Gives the information of a track
 
-### spdl.validateURL(url)
+### spdl.validateURL(url, type?)
 
-Returns true if url is a spotify track link
+Returns true if url is a spotify link
 
 ## Limitations
 
